@@ -36,7 +36,6 @@ class GameCollection(Resource):
             '''
         #TODO add get logic
 
-        # TO-DO: create querying for list of users using db
         return games
 
     @api.response(404, 'Could not create a new game')
@@ -47,7 +46,7 @@ class GameCollection(Resource):
             Creates a new game.
 
             """
-        TODO: return the id of the agme 
+        #TODO: return the id of the agme
         return None
 
 
