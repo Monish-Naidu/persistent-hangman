@@ -1,6 +1,11 @@
 from flask import Flask, request, jsonify
+from flask_restplus import Api
+
+api = Api(title='Hangman API', version='1.0', description='The first iteration of my hangman API')
 
 app = Flask(__name__)
+
+#api.init_app(api) TODO: currently causes an error
 
 word = "vivek"
 
@@ -10,6 +15,10 @@ word_database = {
     "known": ["", "", "", "", ""],
     "message": ""
 }
+
+@app.route('/game')
+def new_game():
+    return 'Creating a new game, good luck!'
 
 
 @app.route('/')
@@ -45,3 +54,6 @@ def guess():
 
 
 
+
+if __name__ == '__main__':
+    app.run(debug=True)  # starting a development server
