@@ -5,12 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8879e646-d820-454e-87f7-a1e6227a7442.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8879e646-d820-454e-87f7-a1e6227a7442.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8879e646-d820-454e-87f7-a1e6227a7442/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8879e646-d820-454e-87f7-a1e6227a7442/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Business.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Game.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/model.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +17,8 @@
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__hangmanbigb_py_.coverage" NAME="Flask (hangmanbigb.py) Coverage Results" MODIFIED="1540894596058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__database_model_py_.coverage" NAME="Flask (database/model.py) Coverage Results" MODIFIED="1540662783990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$persistent_hangman_Monish_Naidu.coverage" NAME="persistent-hangman-Monish-Naidu Coverage Results" MODIFIED="1540147846873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1540895830878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1540897981803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__blapp_py_.coverage" NAME="Flask (blapp.py) Coverage Results" MODIFIED="1540896853219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__anothaapp_py_.coverage" NAME="Flask (anothaapp.py) Coverage Results" MODIFIED="1540858933375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
@@ -105,18 +101,19 @@
     <session id="1287215670">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="py" value="4824" />
+          <entry key="py" value="5065" />
           <entry key="requirements" value="2" />
           <entry key="sql" value="1" />
         </counts>
@@ -124,15 +121,15 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="4824" />
+          <entry key="Python" value="5065" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="game" value="5" />
+          <entry key="game" value="6" />
           <entry key="game_pkey" value="1" />
-          <entry key="py" value="10" />
+          <entry key="py" value="11" />
           <entry key="record" value="1" />
           <entry key="requirements" value="1" />
           <entry key="sql" value="3" />
@@ -142,9 +139,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="7" />
+          <entry key="Database Element" value="8" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="10" />
+          <entry key="Python" value="11" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="3" />
         </counts>
@@ -156,13 +153,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
+            <state relative-caret-position="104">
+              <caret line="124" column="58" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <marker date="1540895830866" expanded="true" signature="2941:2942" ph="..." />
-                <marker date="1540895830866" expanded="true" signature="3498:3586" ph="..." />
-                <marker date="1540895830866" expanded="true" signature="4001:4006" ph="..." />
+                <marker date="1540898054087" expanded="true" signature="2832:2833" ph="..." />
+                <marker date="1540898054087" expanded="true" signature="3394:3482" ph="..." />
+                <marker date="1540898054087" expanded="true" signature="4080:4085" ph="..." />
               </folding>
             </state>
           </provider>
@@ -173,6 +170,18 @@
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blapp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="75" column="31" selection-start-line="70" selection-start-column="5" selection-end-line="79" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,6 +219,7 @@
       <find>random</find>
       <find>game</find>
       <find>game_id</find>
+      <find>Response</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,6 +240,7 @@
         <option value="$PROJECT_DIR$/database/model.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/hangmanbigb.py" />
+        <option value="$PROJECT_DIR$/blapp.py" />
         <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
@@ -275,7 +286,7 @@
     <property name="SearchEverywhereHistoryKey" value="data source&#9;ACTION&#9;DatabaseView.PropertiesAction" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment1-Hangman" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -316,6 +327,21 @@
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (blapp.py)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+      <module name="persistent-hangman-Monish-Naidu" />
+      <option name="target" value="$PROJECT_DIR$/blapp.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -374,10 +400,12 @@
       <item itemvalue="Flask server.Flask (database/model.py)" />
       <item itemvalue="Flask server.Flask (anothaapp.py)" />
       <item itemvalue="Flask server.Flask (hangmanbigb.py)" />
+      <item itemvalue="Flask server.Flask (blapp.py)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Flask server.Flask (blapp.py)" />
         <item itemvalue="Flask server.Flask (hangmanbigb.py)" />
         <item itemvalue="Flask server.Flask (anothaapp.py)" />
         <item itemvalue="Flask server.Flask (database/model.py)" />
@@ -399,13 +427,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24879725" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25223368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.78281784" visible="true" weight="0.32779098" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7821306" visible="true" weight="0.32779098" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,13 +444,13 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" sideWeight="0.4986226" weight="0.32934132" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49380165" weight="0.3257485" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.21718213" side_tool="true" visible="true" weight="0.32779098" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.21786942" side_tool="true" visible="true" weight="0.32779098" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.2749141" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.2749141" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -472,6 +501,18 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8879e646-d820-454e-87f7-a1e6227a7442/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/api/Business.py" />
+    <entry file="file://$PROJECT_DIR$/api/Game.py" />
+    <entry file="file://$PROJECT_DIR$/database/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/database/model.py" />
+    <entry file="file://$PROJECT_DIR$/__init__.py" />
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/record" />
+    <entry file="file://$PROJECT_DIR$/anothaapp.py" />
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/user" />
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/game/index/game_pkey" />
+    <entry file="file://$PROJECT_DIR$/hangmanbigb.py" />
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/game" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -479,81 +520,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/__init__.py">
+    <entry file="file://$PROJECT_DIR$/blapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Business.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="89" />
-          <folding>
-            <element signature="e#185#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/record">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anothaapp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2734">
-          <caret line="186" column="34" lean-forward="true" selection-start-line="186" selection-start-column="34" selection-end-line="186" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/game/index/game_pkey">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hangmanbigb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2032">
-          <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="40" />
+        <state relative-caret-position="357">
+          <caret line="75" column="31" selection-start-line="70" selection-start-column="5" selection-end-line="79" selection-end-column="34" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -567,15 +537,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/game">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/game">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/game">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/game">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/game">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8879e646-d820-454e-87f7-a1e6227a7442/database/postgres/schema/public/table/game">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
+        <state relative-caret-position="104">
+          <caret line="124" column="58" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1540895830866" expanded="true" signature="2941:2942" ph="..." />
-            <marker date="1540895830866" expanded="true" signature="3498:3586" ph="..." />
-            <marker date="1540895830866" expanded="true" signature="4001:4006" ph="..." />
+            <marker date="1540898054087" expanded="true" signature="2832:2833" ph="..." />
+            <marker date="1540898054087" expanded="true" signature="3394:3482" ph="..." />
+            <marker date="1540898054087" expanded="true" signature="4080:4085" ph="..." />
           </folding>
         </state>
       </provider>

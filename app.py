@@ -1,8 +1,9 @@
-from flask import Flask, jsonify, request
-from flask_restplus import Api, Resource, reqparse
+from flask import Flask, request, jsonify
+from flask_restplus import Api, Resource, marshal, fields
 import random
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.contrib.fixers import ProxyFix
+
 
 
 app = Flask(__name__)
@@ -92,9 +93,8 @@ def delete_game(game_id):
     db.session.delete(game)
     db.session.commit()
 
-parser = reqparse.RequestParser()
-parser.add_argument('id', required=True)
-parser.add_argument('guess', required=True)
+
+
 
 @ns.route('/')
 class game_operations(Resource):
@@ -106,27 +106,37 @@ class game_operations(Resource):
         new_game = create_game()
         return "The game id is:  " + str(new_game.id), 200
 
-@ns.route('/<int:id>')
+@ns.route('/<int:game_id>')
 @ns.response(401, 'requests that are not successful, please pick the available game id')
 @ns.response(200, 'requests that are successful (i.e a game_id that is good)')
 @ns.response(500, 'requests that are not successful, (i.e a game_id that is not valid)')
 class GameStatus(Resource):
 #TODO: find out why  Object of type Game is not JSON serializable from get method
 
-    def get(self, id):
+    def get(self, game_id):
         '''
         Finds a current game from given id.
         '''
-        game = find_game(id)
-        word_database["guessed"] = game.guessed
-        word_database["known"] = game.known
-        return jsonify(word_database), 200
+        my_game = Game.query.filter_by(id=game_id).first()
+        #TODO: replace with get_game function
+        if my_game is None:
+            return "Invalid game ID"
 
-    def delete(self, id):
+        curr_state = {
+            "message": "This is how the game is currently!",
+            "known": my_game.known,
+            "guessed": my_game.guessed
+        }
+        return jsonify(curr_state)
+
+
+
+
+    def delete(self, game_id):
         '''
         Deletes a game from a given id.
         '''
-        delete_game(id)
+        delete_game(game_id)
         return "Game deleted successfully", 200
 
 
@@ -147,4 +157,4 @@ class GameStatus(Resource):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run
