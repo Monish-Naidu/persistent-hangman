@@ -59,8 +59,8 @@ def find_game(game_id):
 
 def guess_letter(game_id, guess):
     game = Game.query.filter(Game.id == game_id).one()
-    word_database["guessed"] = game.guessed_letters
-    word_database["known"] = game.known_letters
+    word_database["guessed"] = game.guessed
+    word_database["known"] = game.known
     if len(guess) != 1:
         word_database["message"] = "The guess was not one letter"
         return jsonify(word_database)
@@ -107,9 +107,8 @@ class game_operations(Resource):
         return "The game id is:  " + str(new_game.id), 200
 
 @ns.route('/<int:game_id>')
-@ns.response(401, 'requests that are not successful, please pick the available game id')
-@ns.response(200, 'requests that are successful (i.e a game_id that is good)')
-@ns.response(500, 'requests that are not successful, (i.e a game_id that is not valid)')
+@ns.response(404, 'unsuccessful request')
+@ns.response(200, 'successful request')
 class GameStatus(Resource):
 #TODO: find out why  Object of type Game is not JSON serializable from get method
 
@@ -140,13 +139,15 @@ class GameStatus(Resource):
         return "Game deleted successfully", 200
 
 
-    def put(self):
+@ns.route('/<int:game_id> <string:guess>')
+@ns.response(404, 'unsuccessful request')
+@ns.response(200, 'successful request')
+class GameStatus(Resource):
+    def put(self, game_id, guess):
         '''
         Updates the hangman game with the letter guessed.
         '''
-        guess = request.args.get('letter')
-        id = request.args.get('id')
-        guess_letter(id, guess)
+        guess_letter(game_id, guess)
 
         return "Guess successful", 200
 
