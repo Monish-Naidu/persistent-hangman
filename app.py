@@ -59,6 +59,7 @@ def find_game(game_id):
 
 def guess_letter(game_id, guess):
     game = Game.query.filter(Game.id == game_id).one()
+
     word_database["guessed"] = game.guessed
     word_database["known"] = game.known
     if len(guess) != 1:
@@ -86,6 +87,48 @@ def guess_letter(game_id, guess):
         word_database["guessed"].append(guess)
         return jsonify(word_database)
 
+
+def letter_guess(game_id, guess):
+    game = Game.query.filter(Game.id == game_id).one()
+    curr_state = {
+        "message": "This is how the game is currently!",
+        "known": game.known,
+        "guessed": game.guessed
+    }
+    if len(guess) != 1:
+        curr_state["message"] = "The guess was not one letter"
+        return jsonify(curr_state)
+    if guess not in "abcdefghijklmnopqrstuvwxyz":
+        curr_state["message"] = "The letter " + guess + " is not part of the alphabet"
+        return jsonify(curr_state)
+    if guess in game.known:
+        curr_state["message"] = "You have already guessed " + guess + " try again"
+        return jsonify(curr_state)
+    if guess in game.word:
+        charArr = list(game.known)
+        arrGuessed = list(game.guessed)
+        wordArr = list(game.word)
+        for i in range(0, len(game.word)):
+            if guess == wordArr[i]:
+                charArr[i] = wordArr[i]
+        game.known = "".join(charArr)
+        arrGuessed.append(guess)
+        game.guessed = "".join(arrGuessed)
+        curr_state["known"] = game.known
+        curr_state["guessed"] =game.guessed
+        curr_state["message"] = "Good job playa! the letter " + guess + " is in the word!"
+        db.session.add(game)
+        db.session.commit()
+        return jsonify(curr_state)
+    if guess not in game.word:
+        list_guessed =list(game.guessed)
+        list_guessed.append(guess)
+        curr_state["guessed"] = "".join(list_guessed)
+        curr_state["message"] = guess + " is not in the word"
+        game.guessed = curr_state["guessed"]
+        db.session.add(game)
+        db.session.commit()
+        return jsonify(word_database)
 
 
 def delete_game(game_id):
@@ -147,7 +190,7 @@ class GameStatus(Resource):
         '''
         Updates the hangman game with the letter guessed.
         '''
-        guess_letter(game_id, guess)
+        letter_guess(game_id, guess)
 
         return "Guess successful", 200
 
