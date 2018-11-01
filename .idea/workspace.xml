@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43bb527e-5bd3-480f-8abb-e55469616f52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8879e646-d820-454e-87f7-a1e6227a7442.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8879e646-d820-454e-87f7-a1e6227a7442.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +14,7 @@
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__hangmanbigb_py_.coverage" NAME="Flask (hangmanbigb.py) Coverage Results" MODIFIED="1540894596058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__database_model_py_.coverage" NAME="Flask (database/model.py) Coverage Results" MODIFIED="1540662783990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$persistent_hangman_Monish_Naidu.coverage" NAME="persistent-hangman-Monish-Naidu Coverage Results" MODIFIED="1540147846873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1541056225787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1541057130186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__blapp_py_.coverage" NAME="Flask (blapp.py) Coverage Results" MODIFIED="1540896853219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__workingapp_py_.coverage" NAME="Flask (workingapp.py) Coverage Results" MODIFIED="1540936626182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/persistent_hangman_Monish_Naidu$Flask__anothaapp_py_.coverage" NAME="Flask (anothaapp.py) Coverage Results" MODIFIED="1540858933375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -104,8 +102,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="cell" value="1" />
           <entry key="dummy" value="10" />
-          <entry key="py" value="5966" />
+          <entry key="py" value="6057" />
           <entry key="requirements" value="2" />
           <entry key="sql" value="1" />
         </counts>
@@ -113,8 +112,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="5966" />
-          <entry key="Scratch" value="1" />
+          <entry key="Python" value="6057" />
+          <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -146,8 +145,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="121" column="33" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="33" />
+            <state relative-caret-position="187">
+              <caret line="107" column="27" lean-forward="true" selection-start-line="107" selection-end-line="108" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -410,14 +409,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="745" y="0" width="761" height="966" extended-state="0" />
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20483641" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09896907" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.68705547" visible="true" weight="0.2239521" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.84742266" visible="true" weight="0.22209026" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -427,7 +427,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" sideWeight="0.4986226" weight="0.32934132" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49380165" weight="0.3257485" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.31294453" side_tool="true" visible="true" weight="0.2239521" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.15257733" side_tool="true" visible="true" weight="0.22209026" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -495,8 +495,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="121" column="33" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="33" />
+        <state relative-caret-position="187">
+          <caret line="107" column="27" lean-forward="true" selection-start-line="107" selection-end-line="108" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

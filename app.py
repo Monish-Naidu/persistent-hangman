@@ -39,7 +39,7 @@ def create_game():
     new_word = random.choice(HangmanWords)
     known_letters = []
     for i in range(len(new_word)):
-        known_letters.append("_")
+        known_letters.append("*")
     guessed_letters = []
     new_game = Game(word=new_word, known= known_letters, guessed= guessed_letters)
     db.session.add(new_game)
@@ -113,7 +113,10 @@ def letter_guess(game_id, guess):
                 charArr[i] = wordArr[i]
         game.known = "".join(charArr)
         arrGuessed.append(guess)
-        game.guessed = "".join(arrGuessed)
+
+        #TODO: see which works
+        game.guessed = arrGuessed
+        #game.guessed = "".join(arrGuessed)
         curr_state["known"] = game.known
         curr_state["guessed"] =game.guessed
         curr_state["message"] = "Good job playa! the letter " + guess + " is in the word!"
@@ -123,7 +126,10 @@ def letter_guess(game_id, guess):
     if guess not in game.word:
         list_guessed =list(game.guessed)
         list_guessed.append(guess)
-        curr_state["guessed"] = "".join(list_guessed)
+
+        #TODO: see which works
+        curr_state["guessed"] = list_guessed
+        #curr_state["guessed"] = "".join(list_guessed)
         curr_state["message"] = guess + " is not in the word"
         game.guessed = curr_state["guessed"]
         db.session.add(game)
@@ -190,9 +196,9 @@ class GameStatus(Resource):
         '''
         Updates the hangman game with the letter guessed.
         '''
-        letter_guess(game_id, guess)
+        return letter_guess(game_id, guess)
 
-        return "Guess successful", 200
+
 
 
 
