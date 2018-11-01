@@ -29,10 +29,10 @@ db.create_all()
 
 HangmanWords = ["monish", "brian", "jimmy", "john", "robert", "goat"]
 
-word_database = {
-    "guessed": [],
+curr_state = {
+    "message": "",
     "known": [],
-    "message": ""
+    "guessed": []
 }
 
 def create_game():
@@ -57,44 +57,10 @@ def find_game(game_id):
     return game
 
 
-def guess_letter(game_id, guess):
-    game = Game.query.filter(Game.id == game_id).one()
-
-    word_database["guessed"] = game.guessed
-    word_database["known"] = game.known
-    if len(guess) != 1:
-        word_database["message"] = "The guess was not one letter"
-        return jsonify(word_database)
-    if guess not in "abcdefghijklmnopqrstuvwxyz":
-        word_database["message"] = "The letter " + guess + " is not part of the alphabet"
-        return jsonify(word_database)
-    if guess in word_database["guessed"]:
-        word_database["message"] = "You have already guessed " + guess + " try again"
-        return jsonify(word_database)
-    if guess in game.word:
-        for i in range(0, len(game.word)):
-            if guess == game.word[i]:
-                word_database["known"][i] = guess
-                game.known_letters = word_database["known"]
-        word_database["guessed"].append(guess)
-        game.guessed_letters = word_database["guessed"]
-        word_database["message"] = "Good job playa! the letter " + guess + " is in the word!"
-        db.session.add(game)
-        db.session.commit()
-        return jsonify(word_database)
-    if guess not in game.word:
-        word_database["message"] = guess + " is not in the word"
-        word_database["guessed"].append(guess)
-        return jsonify(word_database)
-
 
 def letter_guess(game_id, guess):
     game = Game.query.filter(Game.id == game_id).one()
-    curr_state = {
-        "message": "This is how the game is currently!",
-        "known": game.known,
-        "guessed": game.guessed
-    }
+    curr_state = {"message": "This is how the game is currently!", "known": game.known, "guessed": game.guessed}
     if len(guess) != 1:
         curr_state["message"] = "The guess was not one letter"
         return jsonify(curr_state)
@@ -111,12 +77,13 @@ def letter_guess(game_id, guess):
         for i in range(0, len(game.word)):
             if guess == wordArr[i]:
                 charArr[i] = wordArr[i]
+
         game.known = "".join(charArr)
         arrGuessed.append(guess)
 
         #TODO: see which works
-        game.guessed = arrGuessed
-        #game.guessed = "".join(arrGuessed)
+        #game.guessed = arrGuessed
+        game.guessed = "".join(arrGuessed)
         curr_state["known"] = game.known
         curr_state["guessed"] =game.guessed
         curr_state["message"] = "Good job playa! the letter " + guess + " is in the word!"
@@ -128,13 +95,13 @@ def letter_guess(game_id, guess):
         list_guessed.append(guess)
 
         #TODO: see which works
-        curr_state["guessed"] = list_guessed
-        #curr_state["guessed"] = "".join(list_guessed)
+       # curr_state["guessed"] = list_guessed
+        curr_state["guessed"] = "".join(list_guessed)
         curr_state["message"] = guess + " is not in the word"
         game.guessed = curr_state["guessed"]
         db.session.add(game)
         db.session.commit()
-        return jsonify(word_database)
+        return jsonify(curr_state)
 
 
 def delete_game(game_id):
@@ -146,6 +113,8 @@ def delete_game(game_id):
 
 
 @ns.route('/')
+@ns.response(404, 'unsuccessful request')
+@ns.response(200, 'successful request')
 class game_operations(Resource):
 
     def post(self):
