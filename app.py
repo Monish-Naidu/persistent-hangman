@@ -37,10 +37,10 @@ curr_state = {
 
 def create_game():
     new_word = random.choice(HangmanWords)
-    known_letters = []
+    known_letters = ""
     for i in range(len(new_word)):
-        known_letters.append("*")
-    guessed_letters = []
+        known_letters += "*"
+    guessed_letters = ""
     new_game = Game(word=new_word, known= known_letters, guessed= guessed_letters)
     db.session.add(new_game)
     db.session.commit()
@@ -76,18 +76,17 @@ def letter_guess(game_id, guess):
         wordArr = list(game.word)
         for i in range(0, len(game.word)):
             if guess == wordArr[i]:
-                charArr[i] = wordArr[i]
-
-        game.known = "".join(charArr)
+                charArr[i] = guess
+                game.known = ''.join(charArr)
+                #game.known = game.known[0:i-1] + guess + game.known[i+1:]
+        curr_state["known"] = list(game.known)
         arrGuessed.append(guess)
 
         #TODO: see which works
         #game.guessed = arrGuessed
         game.guessed = "".join(arrGuessed)
-        curr_state["known"] = game.known
         curr_state["guessed"] =game.guessed
         curr_state["message"] = "Good job playa! the letter " + guess + " is in the word!"
-        db.session.add(game)
         db.session.commit()
         return jsonify(curr_state)
     if guess not in game.word:
