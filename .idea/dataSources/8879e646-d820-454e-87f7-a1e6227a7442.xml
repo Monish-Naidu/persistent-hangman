@@ -74,8 +74,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-11-01.18:10:51.122</IntrospectionTimestamp>
-      <IntrospectionStateNumber>714</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-12-14.18:31:09.851</IntrospectionTimestamp>
+      <IntrospectionStateNumber>751</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -122,24 +122,24 @@
       <Type>index</Type>
     </access-method>
     <sequence id="21" parent="14" name="game_id_seq">
-      <ObjectId>24685</ObjectId>
+      <ObjectId>24697</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>714</StateNumber>
+      <StateNumber>751</StateNumber>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
     </sequence>
     <table id="22" parent="14" name="game">
-      <ObjectId>24687</ObjectId>
+      <ObjectId>24699</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>714</StateNumber>
+      <StateNumber>751</StateNumber>
     </table>
     <column id="23" parent="22" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>714</StateNumber>
+      <StateNumber>751</StateNumber>
       <DefaultExpression>nextval(&apos;game_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>game_id_seq</SequenceName>
@@ -147,28 +147,28 @@
     <column id="24" parent="22" name="word">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>714</StateNumber>
+      <StateNumber>751</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="25" parent="22" name="known">
       <Position>3</Position>
       <DataType>varchar(200)|0s</DataType>
-      <StateNumber>714</StateNumber>
+      <StateNumber>751</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="26" parent="22" name="guessed">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>714</StateNumber>
+      <StateNumber>751</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="27" parent="22" name="game_pkey">
-      <ObjectId>24694</ObjectId>
+      <ObjectId>24706</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="28" parent="22" name="game_pkey">
-      <ObjectId>24695</ObjectId>
+      <ObjectId>24707</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>game_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
